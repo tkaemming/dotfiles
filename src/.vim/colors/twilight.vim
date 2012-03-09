@@ -81,7 +81,7 @@ exe 'hi Function       guifg='.s:violet            .' guibg='.s:darkgrey        
 
 exe 'hi PreProc        guifg='.s:grey_blue         .' guibg='.s:darkgrey        .' gui=none'
 exe 'hi Operator       guifg='.s:light_orange      .' guibg='.s:darkgrey        .' gui=none'
-exe 'hi Type           guifg='.s:yellow            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi Type           guifg='.s:yellow            .' guibg='.s:darkgrey        .' gui=none'
 
 "hi Identifier guifg=#7587a6
 " Type d: 'class'
