@@ -1,0 +1,18 @@
+[user]
+    name = Ted Kaemming
+    email = ted@kaemming.com
+[core]
+    excludesfile = ~/.dotfiles/src/.gitignore
+[alias]
+    st = status
+    co = checkout
+    ci = commit -v
+    cp = cherry-pick
+    br = branch --verbose
+    dc = diff --cached
+    current-branch = !git branch 2>/dev/null | grep -P '^\\*' | head -1 | sed 's/^\\* \\(.*\\)/\\1 /g'
+    conflicted = !git ls-files -u | cut -f 2 | sort -u
+[color]
+    ui = auto
+[gist]
+    private = true
