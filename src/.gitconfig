@@ -14,5 +14,7 @@
     conflicted = !git ls-files -u | cut -f 2 | sort -u
 [color]
     ui = auto
+[github]
+    user = tkaemming
 [gist]
     private = true
