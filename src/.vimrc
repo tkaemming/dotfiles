@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 colorscheme twilight
 
 set laststatus=2
