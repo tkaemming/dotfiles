@@ -1,4 +1,4 @@
-colorscheme desert
+colorscheme twilight
 
 set laststatus=2
 set showmode
