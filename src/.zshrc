@@ -2,6 +2,7 @@ bindkey -v
 
 alias pc=pbcopy
 alias pp=pbpaste
+alias ll='ls -alh'
 
 if [[ -x $(which hub) ]]; then
     alias git=hub
