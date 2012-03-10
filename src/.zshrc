@@ -1,5 +1,7 @@
 bindkey -v
 
+export PATH="$HOME/bin:$HOME/.dotfiles/bin:${PATH}"
+
 alias pc=pbcopy
 alias pp=pbpaste
 alias ll='ls -alh'
