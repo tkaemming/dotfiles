@@ -1,3 +1,6 @@
 [submodule "src/.vim/bundle/command-t"]
 	path = src/.vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "src/.vim/bundle/vim-coffee-script"]
+	path = src/.vim/bundle/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
