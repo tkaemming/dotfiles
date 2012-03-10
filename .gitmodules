@@ -10,3 +10,6 @@
 [submodule "src/.vim/bundle/vim-slime"]
 	path = src/.vim/bundle/vim-slime
 	url = git://github.com/jpalardy/vim-slime.git
+[submodule "vendor/.autoenv"]
+	path = vendor/.autoenv
+	url = git://github.com/kennethreitz/autoenv.git

@@ -26,3 +26,5 @@ PROMPT='%n@%m %# '
 RPROMPT='%{$fg[yellow]%}$(git current-branch)%{$fg[green]%}%~% %{$reset_color%}'
 
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
+
+source ~/.dotfiles/vendor/.autoenv/activate.sh
