@@ -3,6 +3,8 @@
     email = ted@kaemming.com
 [core]
     excludesfile = ~/.dotfiles/src/.gitignore
+[diff]
+    ignoreSubmodules = all
 [alias]
     st = status
     co = checkout
