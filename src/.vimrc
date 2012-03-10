@@ -34,3 +34,5 @@ set listchars=tab:▸\ ,trail:·
 filetype plugin indent on
 
 call pathogen#infect()
+
+let g:slime_target = "tmux"

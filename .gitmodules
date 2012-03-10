@@ -7,3 +7,6 @@
 [submodule "src/.vim/bundle/supertab"]
 	path = src/.vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
+[submodule "src/.vim/bundle/vim-slime"]
+	path = src/.vim/bundle/vim-slime
+	url = git://github.com/jpalardy/vim-slime.git
