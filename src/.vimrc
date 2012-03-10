@@ -29,7 +29,7 @@ set smartcase
 set showmatch
 
 set list
-set listchars=tab:▸\ 
+set listchars=tab:▸\ ,trail:·
 
 filetype plugin indent on
 
