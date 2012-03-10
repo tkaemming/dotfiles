@@ -6,6 +6,9 @@ alias pc=pbcopy
 alias pp=pbpaste
 alias ll='ls -alh'
 
+alias be='bundle exec'
+alias vg='bundle exec vagrant'
+
 if [[ -x $(which hub) ]]; then
     alias git=hub
 fi
