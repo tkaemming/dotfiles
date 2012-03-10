@@ -2,6 +2,9 @@ set nocompatible
 
 colorscheme twilight
 
+set encoding=utf-8
+set hidden
+
 set laststatus=2
 set showmode
 set showcmd
@@ -12,6 +15,7 @@ set showmatch
 
 set nowrap
 set expandtab
+set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set smarttab
@@ -22,6 +26,10 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set showmatch
+
+set list
+set listchars=tab:▸\ 
 
 filetype plugin indent on
 
