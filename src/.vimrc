@@ -36,3 +36,5 @@ filetype plugin indent on
 call pathogen#infect()
 
 let g:slime_target = "tmux"
+
+autocmd Filetype ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2
