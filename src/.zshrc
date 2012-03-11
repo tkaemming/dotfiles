@@ -8,6 +8,7 @@ alias ll='ls -alh'
 
 alias be='bundle exec'
 alias vg='bundle exec vagrant'
+alias runningvms='VBoxManage list runningvms'
 
 if [[ -x $(which hub) ]]; then
     alias git=hub
