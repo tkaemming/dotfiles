@@ -3,6 +3,8 @@
     email = ted@kaemming.com
 [core]
     excludesfile = ~/.dotfiles/src/.gitignore
+[branch]
+    autosetuprebase = always
 [diff]
     ignoreSubmodules = all
 [alias]
