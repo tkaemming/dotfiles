@@ -8,6 +8,7 @@ fi
 
 export PATH="$HOME/bin:$HOME/.dotfiles/bin:${PATH}"
 
+alias cdrepo="cd $(git root)"
 alias e=$EDITOR
 alias pc=pbcopy
 alias pp=pbpaste
