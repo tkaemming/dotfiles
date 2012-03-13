@@ -1,7 +1,14 @@
 bindkey -v
 
+if [[ -x $(which mvim) ]]; then
+    export EDITOR="mvim -v"
+else
+    export EDITOR="vim"
+fi
+
 export PATH="$HOME/bin:$HOME/.dotfiles/bin:${PATH}"
 
+alias e=$EDITOR
 alias pc=pbcopy
 alias pp=pbpaste
 alias ll='ls -alh'
