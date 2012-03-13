@@ -13,6 +13,7 @@ alias e=$EDITOR
 alias pc=pbcopy
 alias pp=pbpaste
 alias ll='ls -alh'
+alias pyclean='find . -name \*.pyc -delete'
 
 alias be='bundle exec'
 alias vg='bundle exec vagrant'
