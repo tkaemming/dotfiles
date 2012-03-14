@@ -13,7 +13,9 @@ alias e=$EDITOR
 alias pc=pbcopy
 alias pp=pbpaste
 alias ll='ls -alh'
+
 alias pyclean='find . -name \*.pyc -delete'
+alias pyf='find . -name \*.py -not -path \*migrations/\* -not -path \*vendor/\* -not -path \*settings/\* | xargs pyflakes'
 
 alias be='bundle exec'
 alias vg='bundle exec vagrant'
