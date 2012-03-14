@@ -41,3 +41,9 @@ RPROMPT='%{$fg[yellow]%}$(git current-branch)%{$fg[green]%}%~% %{$reset_color%}'
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
 source ~/.dotfiles/vendor/.autoenv/activate.sh
+
+CREDENTIALS_DIR=~/.credentials
+if [[ -d $CREDENTIALS_DIR ]]; then
+    chmod -R 0500 $CREDENTIALS_DIR
+    source $CREDENTIALS_DIR/*
+fi
