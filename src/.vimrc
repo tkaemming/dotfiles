@@ -1,4 +1,4 @@
-colorscheme wombat256mod
+colorscheme twilight256
 
 set nocompatible
 
