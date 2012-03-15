@@ -6,7 +6,7 @@ else
     export EDITOR="vim"
 fi
 
-export PATH="$HOME/bin:$HOME/.dotfiles/bin:${PATH}"
+export PATH="$HOME/bin:$HOME/.dotfiles/bin:/usr/local/sbin:${PATH}"
 
 alias cdrepo='cd $(git root)'
 alias e=$EDITOR
