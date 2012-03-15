@@ -6,6 +6,12 @@ else
     export EDITOR="vim"
 fi
 
+export HISTFILE=~/.zsh_history
+export HISTSIZE=5000
+export SAVEHIST=$HISTSIZE
+setopt extendedhistory
+setopt sharehistory
+
 export PATH="$HOME/bin:$HOME/.dotfiles/bin:/usr/local/sbin:${PATH}"
 
 alias cdrepo='cd $(git root)'
