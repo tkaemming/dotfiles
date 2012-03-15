@@ -1,3 +1,5 @@
+colorscheme wombat256mod
+
 set nocompatible
 
 syntax on
