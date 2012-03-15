@@ -14,10 +14,6 @@ alias pc=pbcopy
 alias pp=pbpaste
 alias ll='ls -alh'
 
-if [[ -x /usr/bin/time ]]; then
-    alias time=/usr/bin/time
-fi
-
 alias pyclean='find . -name \*.pyc -delete'
 alias pyf='find . -name \*.py -not -path \*migrations/\* -not -path \*vendor/\* -not -path \*settings/\* | xargs pyflakes'
 
@@ -27,6 +23,11 @@ alias runningvms='VBoxManage list runningvms'
 
 if [[ -x $(which hub) ]]; then
     alias git=hub
+fi
+
+export REPORTTIME=5
+if [[ -x /usr/bin/time ]]; then
+    alias time=/usr/bin/time
 fi
 
 setopt autocd
