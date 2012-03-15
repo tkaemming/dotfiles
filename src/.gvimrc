@@ -1,3 +1,5 @@
+colorscheme twilight
+
 set guioptions-=T
 set transparency=5
 
