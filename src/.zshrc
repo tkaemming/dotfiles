@@ -55,6 +55,10 @@ RPROMPT='%{$fg[yellow]%}$(git current-branch)%{$fg[green]%}%~% %{$reset_color%}'
 
 source ~/.dotfiles/vendor/.autoenv/activate.sh
 
+if [[ -x /usr/local/bin/virtualenvwrapper.sh ]]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
 CREDENTIALS_DIR=~/.credentials
 if [[ -d $CREDENTIALS_DIR ]]; then
     chmod -R 0500 $CREDENTIALS_DIR
