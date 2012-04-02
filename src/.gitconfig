@@ -8,6 +8,7 @@
 [diff]
     ignoreSubmodules = all
 [alias]
+    aa = add --all
     st = status
     co = checkout
     ci = commit -v
