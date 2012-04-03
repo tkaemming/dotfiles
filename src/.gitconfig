@@ -17,6 +17,7 @@
     dc = diff --cached
     current-branch = !git branch 2>/dev/null | grep -P '^\\*' | head -1 | sed 's/^\\* \\(.*\\)/\\1 /g'
     conflicted = !git ls-files -u | cut -f 2 | sort -u
+    grep-all = !git rev-list --all | xargs git grep
     root = rev-parse --show-toplevel
     l = log --pretty=oneline
 [color]
