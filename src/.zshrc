@@ -47,6 +47,10 @@ setopt completealiases
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+bindkey '^r' history-incremental-search-backward
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+
 autoload -U colors && colors
 setopt prompt_subst
 export CLICOLOR=true
