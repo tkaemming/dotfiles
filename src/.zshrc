@@ -12,7 +12,7 @@ export SAVEHIST=$HISTSIZE
 setopt extendedhistory
 setopt sharehistory
 
-export PATH="$HOME/bin:$HOME/.dotfiles/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
+export PATH="$HOME/bin:$HOME/.dotfiles/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/python:${PATH}"
 
 alias cdrepo='cd $(git root)'
 alias e=$EDITOR
