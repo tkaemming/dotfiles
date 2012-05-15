@@ -8,3 +8,5 @@ highlight ColorColumn ctermbg=darkgrey guibg=#222222
 
 set cursorline
 highlight CursorLine guibg=#292929
+
+set guifont=Menlo:h12
