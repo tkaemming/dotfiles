@@ -21,6 +21,7 @@ alias pp=pbpaste
 alias ll='ls -alh'
 mkcd () { mkdir -p $1 && cd $1 }
 alias mostused="cat ${HISTFILE} | colrm 1 15 | sort | uniq -c | sort"
+git-archive-branch () { git branch -m {,archive/}$1 }
 
 alias pyclean='find . -name \*.pyc -delete'
 alias pyf='find . -name \*.py -not -path \*migrations/\* -not -path \*vendor/\* -not -path \*settings/\* | xargs pyflakes'
