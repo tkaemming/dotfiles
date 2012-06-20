@@ -9,7 +9,7 @@
     ignoreSubmodules = all
 [alias]
     aa = add --all
-    st = status
+    st = status -sb
     co = checkout
     ci = commit -v
     cp = cherry-pick
