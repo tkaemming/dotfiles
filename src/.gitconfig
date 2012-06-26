@@ -13,7 +13,7 @@
     co = checkout
     ci = commit -v
     cp = cherry-pick
-    br = branch --verbose
+    br = branch -vv
     dc = diff --cached
     archive-branch = !bash -c 'git branch -m {,${1:-archive}/}$0'
     current-branch = !git branch 2>/dev/null | grep -P '^\\*' | head -1 | sed 's/^\\* \\(.*\\)/\\1 /g'
