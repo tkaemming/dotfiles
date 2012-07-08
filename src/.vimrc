@@ -7,6 +7,14 @@ syntax on
 set encoding=utf-8
 set hidden
 
+set colorcolumn=80
+highlight LineNr ctermfg=234 ctermbg=233
+highlight ColorColumn ctermbg=234 guibg=#222222
+highlight TabLine ctermbg=233
+
+set cursorline
+highlight CursorLine cterm=NONE ctermbg=234 guibg=#292929
+
 set laststatus=2
 set showmode
 set showcmd
