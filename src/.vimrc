@@ -22,6 +22,7 @@ set ruler
 set relativenumber
 set modeline
 set showmatch
+set wildmenu
 
 set nowrap
 set expandtab
