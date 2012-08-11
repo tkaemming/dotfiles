@@ -246,7 +246,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     "DiffDelete
     "DiffText
     "ErrorMsg
-    "call <SID>X("VertSplit", "c2bfa5", "7f7f7f", "reverse")
+    call <SID>X("VertSplit", "c2bfa5", "7f7f7f", "reverse")
     "call <SID>X("Folded", "ffd700", "4d4d4d", "")
     "call <SID>X("FoldColumn", "d2b48c", "4d4d4d", "")
     "call <SID>X("IncSearch", "708090", "f0e68c", "")
@@ -257,9 +257,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     "call <SID>X("Question", "00ff7f", "", "")
     "call <SID>X("Search", "f5deb3", "cd853f", "")
     "call <SID>X("SpecialKey", "9acd32", "", "")
-    "call <SID>X("StatusLine", "c2bfa5", "000000", "reverse")
-    "call <SID>X("StatusLineNC", "c2bfa5", "7f7f7f", "reverse")
-    "call <SID>X("Title", "cd5c5c", "", "")
+    call <SID>X("StatusLine", "c2bfa5", "000000", "reverse")
+    call <SID>X("StatusLineNC", "c2bfa5", "6666666", "reverse")
+    call <SID>X("Title", "cd5c5c", "", "")
     call <SID>X("Visual", "D3D3D3", "3E3E3E", "reverse")
     "VisualNOS
     "call <SID>X("WarningMsg", "fa8072", "", "")
