@@ -24,6 +24,7 @@
     graph = log --graph --oneline --decorate
     web = !bash -c 'hub browse -- blob/$(git rev-parse HEAD)/$0'
     web-blame = !bash -c 'hub browse -- blame/$(git rev-parse HEAD)/$0'
+    clear = !git add --all && git reset --hard HEAD
 [color]
     ui = auto
 [github]
