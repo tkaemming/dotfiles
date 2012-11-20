@@ -57,7 +57,7 @@ autoload -U colors && colors
 setopt prompt_subst
 export CLICOLOR=true
 PROMPT='%n@%m %# '
-RPROMPT='%{$fg[yellow]%}$(git current-branch)%{$fg[green]%}%~% %{$reset_color%}'
+RPROMPT='%(?..%{$fg[red]%}[%?]%{$reset_color%} )%{$fg[yellow]%}$(git current-branch)%{$fg[green]%}%~% %{$reset_color%}'
 
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
