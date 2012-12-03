@@ -16,7 +16,7 @@
     br = branch -vv
     dc = diff --cached
     archive-branch = !bash -c 'git branch -m {,${1:-archive}/}$0'
-    current-branch = !git branch 2>/dev/null | grep -P '^\\*' | head -1 | sed 's/^\\* \\(.*\\)/\\1 /g'
+    current-branch = !git branch 2>/dev/null | grep '^\\*' | head -1 | sed 's/^\\* \\(.*\\)/\\1 /g'
     conflicted = !git ls-files -u | cut -f 2 | sort -u
     grep-all = !git rev-list --all | xargs git grep
     root = rev-parse --show-toplevel
