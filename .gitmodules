@@ -13,3 +13,6 @@
 [submodule "vendor/.autoenv"]
 	path = vendor/.autoenv
 	url = git://github.com/kennethreitz/autoenv.git
+[submodule "src/.vim/bundle/solarized"]
+	path = src/.vim/bundle/solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
