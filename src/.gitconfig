@@ -21,7 +21,8 @@
     grep-all = !git rev-list --all | xargs git grep
     root = rev-parse --show-toplevel
     l = log --pretty=oneline
-    ls = ls-tree HEAD
+    ls = !cd $GIT_PREFIX && git ls-files | xargs -n 1 -I FILE git log --pretty='%C(yellow)%h %C(reset)FILE' -- FILE
+    ll = !cd $GIT_PREFIX && git ls-files | xargs -n 1 -I FILE git log --pretty='%C(yellow)%h %C(white)FILE\n\t%s\n\t%an <%ae>, %cr' -- FILE
     graph = log --graph --oneline --decorate
     web = !bash -c 'hub browse -- blob/$(git rev-parse HEAD)/$0'
     web-blame = !bash -c 'hub browse -- blame/$(git rev-parse HEAD)/$0'
