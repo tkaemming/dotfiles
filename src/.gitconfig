@@ -21,6 +21,7 @@
     grep-all = !git rev-list --all | xargs git grep
     root = rev-parse --show-toplevel
     l = log --pretty=oneline
+    ls = ls-tree HEAD
     graph = log --graph --oneline --decorate
     web = !bash -c 'hub browse -- blob/$(git rev-parse HEAD)/$0'
     web-blame = !bash -c 'hub browse -- blame/$(git rev-parse HEAD)/$0'
