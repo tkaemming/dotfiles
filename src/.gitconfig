@@ -21,13 +21,14 @@
     grep-all = !git rev-list --all | xargs git grep
     root = rev-parse --show-toplevel
     l = log --pretty=oneline
-    ls = !cd $GIT_PREFIX && git ls-files | xargs -n 1 -I FILE git log --pretty='%C(yellow)%h %C(reset)FILE' -- FILE
-    ll = !cd $GIT_PREFIX && git ls-files | xargs -n 1 -I FILE git log --pretty='%C(yellow)%h %C(white)FILE\n\t%s\n\t%an <%ae>, %cr' -- FILE
+    ls = !cd $(git pwd) && git ls-tree --name-only HEAD | xargs -n 1 -I FILE git log -1 --pretty='%C(yellow)%h %C(reset)FILE' -- FILE
+    ll = !cd $(git pwd) && git ls-tree --name-only HEAD | xargs -n 1 -I FILE git log -1 --pretty='%C(yellow)%h %C(white)FILE\n\t%s\n\t%an <%ae>, %cr' -- FILE
     graph = log --graph --oneline --decorate
     web = !bash -c 'hub browse -- blob/$(git rev-parse HEAD)/$0'
     web-blame = !bash -c 'hub browse -- blame/$(git rev-parse HEAD)/$0'
     clear = !git add --all && git reset --hard HEAD
     fix = commit --amend
+    pwd = !echo ${GIT_PREFIX:-$(git root)}
 [color]
     ui = auto
 [github]
