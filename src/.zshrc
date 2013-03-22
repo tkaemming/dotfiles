@@ -23,7 +23,12 @@ mkcd () { mkdir -p $1 && cd $1 }
 alias rmswap="find . -name .\*.sw\? -delete"
 alias mostused="cat ${HISTFILE} | colrm 1 15 | sort | uniq -c | sort"
 git-archive-branch () { git branch -m {,archive/}$1 }
-editpkg () { $EDITOR $(whichpkg $@) }
+editpkg () {
+  pkg=$(whichpkg $@)
+  RETVAL=$?
+  [ $RETVAL -eq 0 ] && $EDITOR $pkg
+  return $RETVAL
+}
 pyversion () { python -c "import pkg_resources; print pkg_resources.get_distribution('$1').version" }
 
 alias pyclean='find . -name \*.pyc -delete'
