@@ -24,6 +24,7 @@ alias rmswap="find . -name .\*.sw\? -delete"
 alias mostused="cat ${HISTFILE} | colrm 1 15 | sort | uniq -c | sort"
 git-archive-branch () { git branch -m {,archive/}$1 }
 editpkg () { $EDITOR $(whichpkg $@) }
+pyversion () { python -c "import pkg_resources; print pkg_resources.get_distribution('$1').version" }
 
 alias pyclean='find . -name \*.pyc -delete'
 alias pyf='find . -name \*.py -not -path \*migrations/\* -not -path \*vendor/\* -not -path \*settings/\* | xargs pyflakes'
