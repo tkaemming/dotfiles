@@ -29,6 +29,7 @@
     clear = !git add --all && git reset --hard HEAD
     fix = commit --amend
     pwd = !echo ${GIT_PREFIX:-$(git root)}
+    m = checkout master
 [color]
     ui = auto
 [github]

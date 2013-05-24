@@ -19,6 +19,8 @@ alias e=$EDITOR
 alias pc=pbcopy
 alias pp=pbpaste
 alias ll='ls -alh'
+alias lg='git ls-tree HEAD . | grep blob | cut -f 2 | xargs ls -alh'
+
 mkcd () { mkdir -p $1 && cd $1 }
 alias rmswap="find . -name .\*.sw\? -delete"
 alias mostused="cat ${HISTFILE} | colrm 1 15 | sort | uniq -c | sort"
