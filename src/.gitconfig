@@ -30,6 +30,7 @@
     fix = commit --amend
     pwd = !echo ${GIT_PREFIX:-$(git root)}
     m = checkout master
+    check-imports = !git diff --diff-filter=TM master --stat | grep .py | cut -d ' ' -f 2 | xargs pyflakes | grep 'imported but unused'
 [color]
     ui = auto
 [github]
