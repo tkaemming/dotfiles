@@ -10,7 +10,7 @@
 [alias]
     aa = add --all
     st = status -sb
-    co = !git-checkout
+    co = !git-quick-checkout $1
     ci = commit -v
     cp = cherry-pick
     br = branch -vv
