@@ -10,7 +10,7 @@
 [alias]
     aa = add --all
     st = status -sb
-    co = checkout
+    co = !git-checkout
     ci = commit -v
     cp = cherry-pick
     br = branch -vv
@@ -30,7 +30,7 @@
     fix = commit --amend
     pwd = !echo ${GIT_PREFIX:-$(git root)}
     m = checkout master
-    check-imports = !git diff --diff-filter=TM master --stat | grep .py | cut -d ' ' -f 2 | xargs pyflakes | grep 'imported but unused'
+    lint = !git diff --diff-filter=TM master --stat | grep .py | cut -d ' ' -f 2 | xargs pyflakes
 [color]
     ui = auto
 [github]
